@@ -14,10 +14,10 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 RH_ASK driver(2000, RX_PIN, TX_PIN, 10, false);
-String omkar = "4D F9 B8 21";
-String ruchir = "0D 1A 9C 23";
-String aivant = "25 09 2E 5B";
-String keyring = "67 A1 EC A4";
+String omkar = "00 00 00 00"; // Put your ID's here!
+String ruchir = "00 00 00 00";
+String aivant = "00 00 00 00";
+String keyring = "00 00 00 00";
 
 struct data{
   bool demoModeToggle;
