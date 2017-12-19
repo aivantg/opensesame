@@ -8,7 +8,7 @@ Full Video: https://youtu.be/Dy8ZlKT2p58
 
 ## How it works
 
-All in all, this project uses two Arduino microcontrollers to control all the parts that make it work. One is on the inside of the door controlling the motor and listening for knocks while the other is on the outside of the door, ready to scan a key card scans.If you don't know what an "Arduino" is, it's a small credit-card sized circuit board that lets you program a small processor to interact with various electrical components. It's fantastic for hobby projects like this. Learn more on [their website](http://www.arduino.cc)! Keep reading for some slightly more technical details about the project.
+All in all, this project uses two Arduino microcontrollers to control all the parts that make it work. One is on the inside of the door controlling the motor and listening for knocks while the other is on the outside of the door, ready to scan a key card scans. If you don't know what an "Arduino" is, it's a small credit-card sized circuit board that lets you program a small processor to interact with various electrical components. It's fantastic for hobby projects like this. Learn more on [their website](https://www.arduino.cc/en/Guide/Introduction)! Keep reading for some slightly more technical details about the project.
 
 ### Technical Details
 
