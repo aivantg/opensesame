@@ -2,13 +2,15 @@
 
 I was tired of opening my dorm room door with a plain old key, so I decided to build a system to make it more interesting! In short: I upgraded my dorm room so that you can now get in through two new ways: scanning a key card on a reader outside the door or knocking a secret pattern on the door itself.
 
-![OpenSesame Gif](https://i.imgur.com/PT4G9zO.gif)
+<img src="/demo.gif?raw=true">
 
 Full Video: https://youtu.be/Dy8ZlKT2p58
 
 ## How it works
 
 All in all, this project uses two Arduino microcontrollers to control all the parts that make it work. One is on the inside of the door controlling the motor and listening for knocks while the other is on the outside of the door, ready to scan a key card scans.If you don't know what an "Arduino" is, it's a small credit-card sized circuit board that lets you program a small processor to interact with various electrical components. It's fantastic for hobby projects like this. Learn more on [their website](http://www.arduino.cc)! Keep reading for some slightly more technical details about the project.
+
+### Technical Details
 
 The circuit on the outside of the door is the simplest of all. The Arduino is mounted to the wall, powered by a battery pack, and connected to a breadboard containing two main components: an RFID scanner and a 433hz radio transmitter. The code waits for a card to be scanned, reads the UID of the card compares it to the stored and accepted IDs, and then broadcasts the result using the transmitter. The code is all in `Open_Sesame_Auth_Controller.ino`. You will also see some code relating to a button that controls the demo mode. This was so that we could send the motor controller a signal to turn on demo mode for our friends without revealing our secret knock.
 
